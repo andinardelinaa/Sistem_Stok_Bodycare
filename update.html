@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="form.css">
+    <title>INPUT DATA SKINCARE</title>
+  </head>
+
+  <body>
+
+    <div class="container" style="margin-top: 80px">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="card">
+            <div class="card-header">
+              UPDATE DATA SKINCARE
+            </div>
+            <div class="body">
+            <div class="card-body">
+              <form action="simpan-siswa.php" method="POST">
+                <!--<div class=""form-group>
+                    <label>NIM</label>
+                    <input type="number" name="nim" id="nim" placeholder="Masukan NIM " class=""form-control>
+                </div>-->
+                </div>
+                <div class="form-group">
+                    <label for="merk">Merk</label>
+                    <select name="merk" id="merk">
+                          <option value="Hanasui">Hanasui</option>
+                          <option value="Skintific">Skintific</option>
+                          <option value="Bioaqua">Bioaqua</option>
+                          <option value="Viva">Viva</option>
+                          <option value="You">You</option>
+                 </select>
+                  </div>
+                  <!--
+                  <div class="form-group">
+                  <label for="jenisskincare">Jenis Skincare</label>
+                  <select name="jenisskincare" id="jenisskincare">
+                        <option value="Face Wash">Face Wash</option>
+                        <option value="Toner">Toner</option>
+                        <option value="Serum">Serum</option>
+                        <option value="Pelembab">Pelembab</option>
+                        <option value="Sunscreen">Sunscreen</option>
+                  </select>-->
+                  
+                  <div class="jenis">
+                  <label>Jenis Skincare</label><br>
+                  <input type="radio" id="facewash" name="jenis">
+                  <label for="facewash">Fach Wash</label>
+
+                  
+                  <input type="radio" id="toner" name="jenis">
+                  <label for="toner">Toner</label>
+
+                  
+                  <input type="radio" id="serum" name="jenis">
+                  <label for="serum">Serum</label>
+
+                  
+                  <input type="radio" id="pelembab" name="jenis">
+                  <label for="pelembab">Pelembab</label>
+
+                  
+                  <input type="radio" id="sunscreen" name="jenis">
+                  <label for="sunscreen">Sunscreen</label>
+                </div>
+
+                 
+            <div class="form-group">
+                  <label>Nama Skincare</label>
+                  <input type="text" name="nama" placeholder="Masukkan Nama Siswa" class="form-control">
+                </div>
+
+
+                <div class="form-group">
+                <label for="date">Tanggal Expired</label>
+                <input type="date" id="date" name="date">
+                </div>
+            
+                
+
+
+                <div class="form-group">
+                  <label>Jenis Kulit</label><br>
+                  <textarea class="form-control" name="kulit" placeholder="Masukan Jenis Kulit"></textarea>
+            
+                </div>
+                
+                <div clas="form-group">
+                    <label for="foto">Foto Produk</label>
+                    <input type="file" id="foto" name="foto"><br><br>
+                </div>
+
+
+                <div class="form-group">
+                  <label>Jumlah Stok</label>
+                  <input type="number" id="stok" name="stok">
+                </div>
+                
+                <button type="submit" class="btn btn-success">SIMPAN</button>
+                <button type="reset" class="btn btn-warning">RESET</button>
+
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
